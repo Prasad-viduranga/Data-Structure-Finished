@@ -11,28 +11,31 @@ public class Stack {
         for (int i = 0; i < arr.length; i++) {
             arrTemp[i] = arr[i];
         }
-        arrTemp[arrTemp.length-1] = num;
-        arr=arrTemp;
-
+        arrTemp[arrTemp.length - 1] = num;
+        arr = arrTemp;
     }
 
     public void pop() {
-
-
+        int arrTemp[] = new int[arr.length - 1];
+        for (int i = 0; i < arr.length - 1; i++) {
+            arrTemp[i] = arr[i];
+        }
+        arr = arrTemp;
     }
 
     public boolean empty() {
 
-        return true;
+        return (arr.length < 0);
     }
 
     public int peek() {
 
-        return 0;
+        return arr[arr.length - 1];
     }
 
     public void clear() {
-
+        int arrTemp[] = {};
+        arr = arrTemp;
     }
 
     public void print() {
