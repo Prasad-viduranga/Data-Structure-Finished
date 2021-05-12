@@ -30,8 +30,11 @@ public class Queue {
     }
 
     public int peek() {
-
-        return 0;
+        int lastData = 0;
+        if (arr.length>0) {
+            lastData = arr[arr.length-1];
+        }
+        return lastData;
     }
 
     public void clear() {

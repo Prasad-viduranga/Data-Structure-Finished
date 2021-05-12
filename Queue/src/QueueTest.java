@@ -20,6 +20,14 @@ public class QueueTest {
 
         queue.clear();
         queue.print();
+
+        queue.enqueue(100);
+        queue.enqueue(200);
+        queue.enqueue(300);
+        queue.enqueue(400);
+        queue.enqueue(500);
+
+        System.out.println("Peek is : "+queue.peek());
     }
 
 }
