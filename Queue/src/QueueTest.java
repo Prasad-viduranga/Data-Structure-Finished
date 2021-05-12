@@ -13,6 +13,9 @@ public class QueueTest {
 
         queue.print();
 
+        queue.dequeue();
+        queue.print();
+
     }
 
 }

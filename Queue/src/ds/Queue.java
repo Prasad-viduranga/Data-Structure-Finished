@@ -9,15 +9,19 @@ public class Queue {
 
     public void enqueue(int num) {
         int arrTemp[] = new int[arr.length + 1];
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arrTemp.length - 1; i++) {
             arrTemp[i] = arr[i];
         }
         arrTemp[arr.length] = num;
-
+        arr = arrTemp;
     }
 
     public void dequeue() {
-
+        int arrTemp[] = new int[arr.length-1 ];
+        for (int i = 0; i < arrTemp.length ; i++) {
+            arrTemp[i] = arr[i];
+        }
+        arr = arrTemp;
     }
 
     public boolean empty() {
