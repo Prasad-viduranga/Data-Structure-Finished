@@ -25,7 +25,7 @@ public class Stack {
 
     public boolean empty() {
 
-        return (arr.length < 0);
+        return (!(arr.length >0));
     }
 
     public int peek() {
@@ -43,7 +43,14 @@ public class Stack {
     }
 
     public boolean contains(int num) {
-        return false;
+        Boolean b = false;
+        for (int i = 0; i < arr.length-1; i++) {
+            if (num == arr[i]) {
+                b = true;
+                break;
+            }
+        }
+        return b;
     }
 
 

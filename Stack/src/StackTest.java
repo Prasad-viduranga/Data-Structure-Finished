@@ -27,6 +27,15 @@ public class StackTest {
 
         System.out.println(stack.empty());
 
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        System.out.println(stack.contains(30));
+        System.out.println(stack.contains(45));
+
 
     }
 }
