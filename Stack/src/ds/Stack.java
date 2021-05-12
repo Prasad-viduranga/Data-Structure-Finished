@@ -25,7 +25,7 @@ public class Stack {
 
     public boolean empty() {
 
-        return (!(arr.length >0));
+        return (!(arr.length > 0));
     }
 
     public int peek() {
@@ -39,12 +39,17 @@ public class Stack {
     }
 
     public void print() {
+        int arrTemp[] = new int[arr.length];
+        for (int i = 0; i < arr.length - 1; i++) {
+
+            arrTemp[arr.length - i-1] = arr[i];
+        }
         System.out.println(Arrays.toString(arr));
     }
 
     public boolean contains(int num) {
         Boolean b = false;
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             if (num == arr[i]) {
                 b = true;
                 break;
