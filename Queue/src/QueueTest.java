@@ -28,6 +28,10 @@ public class QueueTest {
         queue.enqueue(500);
 
         System.out.println("Peek is : "+queue.peek());
+
+        System.out.println("Contain of "+10+" is : "+queue.contains(10));
+        System.out.println("Contain of "+200+" is : "+queue.contains(200));
+        System.out.println(queue.size());
     }
 
 }

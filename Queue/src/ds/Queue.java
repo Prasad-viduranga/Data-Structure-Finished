@@ -31,8 +31,8 @@ public class Queue {
 
     public int peek() {
         int lastData = 0;
-        if (arr.length>0) {
-            lastData = arr[arr.length-1];
+        if (arr.length > 0) {
+            lastData = arr[arr.length - 1];
         }
         return lastData;
     }
@@ -48,11 +48,18 @@ public class Queue {
     }
 
     public boolean contains(int num) {
-        return true;
+        Boolean b = false;
+        for (int i = 0; i < arr.length; i++) {
+            if (num == arr[i]) {
+                b = true;
+                break;
+            }
+        }
+        return b;
     }
 
     public int size() {
-        return 0;
+        return (arr.length);
     }
 
 
