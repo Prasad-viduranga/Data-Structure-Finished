@@ -16,6 +16,10 @@ public class QueueTest {
         queue.dequeue();
         queue.print();
 
+        System.out.println(queue.empty());
+
+        queue.clear();
+        queue.print();
     }
 
 }

@@ -17,22 +17,26 @@ public class Queue {
     }
 
     public void dequeue() {
-        int arrTemp[] = new int[arr.length-1 ];
-        for (int i = 0; i < arrTemp.length ; i++) {
+        int arrTemp[] = new int[arr.length - 1];
+        for (int i = 0; i < arrTemp.length; i++) {
             arrTemp[i] = arr[i];
         }
         arr = arrTemp;
     }
 
     public boolean empty() {
-        return true;
+
+        return (!(arr.length > 0));
     }
 
     public int peek() {
+
         return 0;
     }
 
     public void clear() {
+        int arrTemp[] = {};
+        arr = arrTemp;
 
     }
 
